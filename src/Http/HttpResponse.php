@@ -109,7 +109,6 @@ class HttpResponse
                     $this->requestId = $value;
                 }elseif($key == "x-ca-error-message")
                 {
-                    d($value);
                     $this->errorMessage = $value;
                 }
             }
