@@ -17,6 +17,8 @@
         }
     ],
     "require": {
+        "hyperf/guzzle": "~1.1.0",
+        "hyperf/contract": "~1.1.0",
         "php": ">=7.2"
     },
     "autoload": {

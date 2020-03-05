@@ -1,11 +1,15 @@
 
+## 说明
+基于hyperf框架的HTTP客户端的协程化的阿里云api的实现
+
 ## 安装
+
 ```
 composer require yangqing/aliyun-api-gateway
 ```
 
 ## 配置
-在`config`目录下新增配置文件`aliyun_api.php`
+在`config`目录下配置文件`aliyun_api.php`
 ```php
 return [
     'app_id' => env('ALIYUN_API_APPID', ''), // 阿里云api授权应用的AppKey
