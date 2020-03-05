@@ -56,7 +56,8 @@ class ApiGateway implements ApiGatewayInterface
     private function initClient()
     {
         if(is_null($this->httpClient)){
-            $conf = config('aliyun_api');
+            $conf = $this->config->get('aliyun_sls', []);
+            //$conf = config('aliyun_api');
             if(!isset($conf['app_id']) || empty($conf['app_id'])){
                 throw new Exception('请在config中配置aliyun_api的app_id');
             }
@@ -93,7 +94,8 @@ class ApiGateway implements ApiGatewayInterface
      * @return void
      */
     public function request($host, $path, $method = 'GET', $params = [], $signHeader = []) {
-        $hostList = config('aliyun_api.hosts');
+        $hostList = $this->config->get('aliyun_sls.hosts', []);
+        //$hostList = config('aliyun_api.hosts');
         if(!isset($hostList[$host])){
             throw new \Exception("$host 尚未指定,请在aliyun_api.hosts配置");
         }
