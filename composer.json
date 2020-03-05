@@ -1,0 +1,44 @@
+{
+    "name": "yangqing/aliyun-api-gateway",
+    "minimum-stability": "dev",
+    "description": "AliYun API Gateway For Hyperf",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "aliyun",
+        "api",
+        "gateway"
+    ],
+    "authors": [
+        {
+            "name": "yq",
+            "email": "yangqingapp@163.com"
+        }
+    ],
+    "require": {
+        "hyperf/guzzle": "~1.1.0",
+        "hyperf/contract": "~1.1.0",
+        "psr/container": "^1.0",
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "YouMi\\Aliyun\\ApiGateway\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YouMitest\\Aliyun\\ApiGateway": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Ym\\AliyunSls\\ConfigProvider"
+        }
+    }
+}
