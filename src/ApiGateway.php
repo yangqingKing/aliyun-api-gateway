@@ -16,6 +16,7 @@ use YouMi\Aliyun\ApiGateway\Util\SignUtil;
 use YouMi\Aliyun\ApiGateway\Constant\HttpHeader;
 use YouMi\Aliyun\ApiGateway\Constant\SystemHeader;
 use YouMi\Aliyun\ApiGateway\Constant\ContentType;
+use Exception;
 
 /**
  * ApiGateway
